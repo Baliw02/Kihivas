@@ -19,8 +19,9 @@ import MenuList from './Menulist'
     header{
         text-align: center;
         align-items: center;
-        left:0;
         top:0;
+        left:0;
+        right: 0;
         width: 100%;
         position: fixed;
         background-color: black;

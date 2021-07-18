@@ -1,6 +1,8 @@
 <template>
 
 <div id="app">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -107,12 +109,23 @@ h1{
   font-weight: 300;
 }
 body{
-  text-align: center;
-  margin:0;
   overflow-x: hidden;
+  text-align: center;
+  margin: 0;
+  width:100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (min-width: 3839px) {
+  body{
+    margin:auto;
+    text-align: center;
+    align-items: center;
+    width:1920px;
+  }
 }
 </style>

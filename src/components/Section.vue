@@ -29,7 +29,7 @@
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        margin-top: 50%;
+        margin-top: 20%;
         clear:none;
         width: 100%;
         display: flex;
@@ -108,11 +108,11 @@
                 background-size: 100%;
                 background-position: center;
                 margin-bottom: 100px;
-                margin-top: 800px;
+                margin-top: 100%;
             }
             .left-flex{
                 position: relative;
-                top:-400px;
+                top:-300px;
                 padding:30px 30px;
                 margin-left: 0;
                 width:100%;            

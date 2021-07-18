@@ -1,4 +1,5 @@
 <template>
+<section>
 <div class="full-flex">
     <div class="left-flex">
         <carousel
@@ -10,6 +11,7 @@
             :touchDrag="false"
             :centerMode="true"
             :spacePadding="0"
+            @page-change="counter+=1"
         >
             <slide>
                 <img src="./Images/tamas01.jpg">
@@ -36,19 +38,40 @@
     </p>
   </div>
 </div>
+<div class="visible" id="coupon-box"  v-if="counter >= 3 && counter < 4">
 
-
+    <div class="info">
+    <h1>gratulálunk</h1>
+    <span id="coupon-info">
+        Mivel ilyen szorgosan gyüjtöd az információt, meg jutalmazunk egy kóddal
+        melyet beváltva minden termékünk árából levon 10%-ot!
+    </span>
+    <br>
+    <span id="coupon-code">
+        Kód: sd52a4
+    </span>
+    </div>
+</div>
+</section>
 </template>
 
 <script>
     export default{
-        name:"Szent"
+        name:"Betsek",
+        data(){
+            return{
+                counter:0
+            }
+        }
     }
 
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+    $sec: rgba(72, 61, 139, 100%);
+    $prim: white;
+
     .VueCarousel-slide{
         position:relative;
     }
@@ -61,6 +84,7 @@
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
+        margin-bottom: 5%;
     }
     .left-flex{
         margin-left:0;
@@ -91,7 +115,47 @@
         width: fit-content;
         border-bottom: 1px solid black;
     }
+    .visible{
+        margin: auto;
+        display:block;
+        width:50%;
+        padding:10px 10px;
+        background-color: $sec;
+    }
+    .info{
+        justify-content: left;
+        font-family: Roboto;
+        width:50%;
+        margin:auto;
+        color:white;
+    }
+    .info > h1{
+        margin:auto;
+        color:white;
+        border-bottom:3px solid white;
+        font-size: x-large;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    #coupon-info{
+        font-size: medium;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+    #coupon-code{
+        background-color: $prim;
+        color:$sec;
+        font-size: xx-large;
+        text-transform: uppercase;
+        padding:0;
+    }
     @media only screen and (max-width: 812px) {
+        .visible{
+        width:100%;
+        }
+        #coupon-code{
+            font-size: x-large;
+        }
         .full-flex{
             padding: 1%;
             flex-wrap: wrap;
@@ -117,6 +181,7 @@
                 padding-right: 5px;
             }
         }
+
 
 
 </style>

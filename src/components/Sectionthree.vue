@@ -22,7 +22,7 @@
     .full-sec{
         z-index: 10;
         width: 100%;
-        margin-top: 25%;
+        margin-top: 15%;
         display: block;
         background-image: url("./backthird.jpg");
         background-size: 80%;

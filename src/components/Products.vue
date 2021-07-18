@@ -68,9 +68,9 @@
 
     }
     .row{
-        margin-top: 15%;
-        margin-left:10%;
-        margin-right: 10%;
+        margin-top: 10%;
+        margin-left:5%;
+        margin-right: 5%;
         align-items: center;
         justify-content: center;
         white-space: wrap;
@@ -176,7 +176,20 @@
                 width:12%;
             }
             .decs{
-                width: 5%;
+                left:10%;
+                width: 10%;
+            }
+        }
+        @media only screen and (max-width: 455px) {
+            #price{
+                left:25%;
+            }
+            #num{
+                width:45px;
+                left:45%;
+            }
+            .decs{
+                width:15%;
             }
         }
 </style>

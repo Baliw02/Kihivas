@@ -26,7 +26,7 @@
         z-index: 10;
         flex-wrap: wrap-reverse;
         display:flex;
-        margin-top: 30%;
+        margin-top: 10%;
     }
     .left-flex{
         flex:50%;
@@ -35,9 +35,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-    }
-    img{
-        width:100%;
     }
     .right-flex
     {
@@ -89,18 +86,23 @@
         @media only screen and (max-width: 455px) {
             .right-flex{
                 flex:100%;
+                justify-content: center;
             }
             .left-flex{
-                margin-top: -60px;
+                margin-top: -200px;
                 flex:100%;
+                background-size: contain;
             }
             .text-box{
                 width:100%;
+                padding-left:2%;
+                padding-right:2%;
 
             }
             p{
                 font-size: small;
                 line-height: 1.5;
+                text-align: left;
             }
         }
 

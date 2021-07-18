@@ -74,6 +74,12 @@ li {
     background-color: $sec;
     border-radius: 10%;
     width:60px;
+    transition: all .2s linear;
+
+}
+#cart:hover{
+    color:$sec;
+    background-color: $prim;
 }
 button{
     border-top: 1px solid black;
@@ -90,7 +96,7 @@ button{
 }
 .act{
     border-top:1px solid $sec;
-    transition: all .4s linear;
+    transition: all .2s linear;
 }
 li:hover{
     color:$sec;

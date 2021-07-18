@@ -35,7 +35,7 @@ h1{
     animation-name: fly;
     animation-duration: 2s;
     font-weight: $font-w;
-    margin-top: 22%;
+    padding-top: 22%;
     color:$font-l;
     font-size: 50px;
     font-family: $font-f;
@@ -49,6 +49,12 @@ h1{
         font-size: $h1-s;
         }
     }
+@media only screen and (min-width: 3839px) {
+    h1{
+        margin-top: 10%;
+    }
+}
+
 
 @keyframes fade-in {
     from{

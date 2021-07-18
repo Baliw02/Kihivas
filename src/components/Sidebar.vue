@@ -18,17 +18,36 @@
     </b-sidebar>
     <div class="others">
         <button id="cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
-        <button id="eng" class="langs">ENG</button>
-        <button class="langs act">HUN</button>
+        <button id="eng" v-on:click='switchingLang()' class="langs">ENG</button>
+        <button id="hun" v-on:click='switchingLang()' class="langs act">HUN</button>
     </div>
 </div>
 </template>
 
 <script>
+    export default{
+                methods:{
+            switchingLang(){
+                var btn_eng = document.getElementById("eng");
+                var btn_hun = document.getElementById("hun");
+                btn_eng.classList.toggle("act");
+
+                if(btn_eng.className == "langs act"){
+                    btn_hun.classList.remove("act");
+                }
+                if(btn_eng.className != "langs act"){
+                    btn_hun.classList.toggle("act");
+                }
+            }
+        }
+    }
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+    $sec: rgba(72, 61, 139, 100%);
+    $prim: white;
+
     .others{
         text-align: right;
     }
@@ -63,7 +82,8 @@
         margin-inline: 1%;
     }
     .act{
-    border-top:1px solid white;
+    border-top:1px solid $sec;
+    transition: all .2s linear;
     }
     ul{
         padding-left: 0;
