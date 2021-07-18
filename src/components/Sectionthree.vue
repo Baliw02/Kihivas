@@ -18,7 +18,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .full-sec{
         z-index: 10;
         width: 100%;

@@ -22,7 +22,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .full-flex{
         background-position: center;
         background-image:url("./backsecond.jpg");

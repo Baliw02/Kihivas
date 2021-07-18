@@ -20,7 +20,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     
     .full-flex{
         z-index: 10;
