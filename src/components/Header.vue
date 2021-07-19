@@ -23,7 +23,7 @@ import MenuList from './Menulist'
         left:0;
         right: 0;
         width: 100%;
-        position: fixed;
+        position: relative;
         background-color: black;
         color:black;
         margin-bottom: 0;

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="full">
         <div class="listing">
             <ul>
                 <li><button  v-on:click="component='Betsek'">BETSEK</button></li>
@@ -48,25 +48,87 @@ export default{
 }
 </script>
 <style lang="scss" scoped>
+    $sec: rgba(72, 61, 139, 100%);
+    $prim: white;
+    .full{
+        text-align: center;
+        justify-content: center;
+    }
      .listing{
         display: flex;
         justify-content: center;
     }
     ul{
+        justify-content: center;
         text-align: center;
         width: 95%;
-        border-bottom: 1px solid black;
+        border-bottom: 5px solid $sec;
         padding-bottom: 1%;
     }
     li{
-        font-family: Roboto;
-        font-weight: 200;
-        margin-inline: 1%;
         display: inline;
     }
     button{
-        
+        font-family: Roboto;
+        font-weight: 600;
+        transition: all .2s linear;
+        color:$prim;
         border:none;
-        background-color:inherit;
+        background-color:$sec;
+        padding:10px 10px;
+        margin-inline-end: 1%;
+    }
+    button:hover{
+        color:$sec;
+        background-color: $prim;
+    }
+    @media only screen and (max-width: 817px) {
+        .full{
+            margin-top: -20%;
+        }
+        .listing{
+            width: 80%;
+            text-align: center;
+            justify-content: center;
+            margin-left:auto;
+            margin-right: auto;
+        }
+        ul{
+            padding-top:20px;
+            padding-bottom: 20px;
+            border-radius: 15px;
+            background-color: $sec;
+            padding-left:0;
+            width: 100%;
+            border-bottom: none;
+        }
+        li{
+            padding-top: 1%;
+            display: block;
+        }
+        button{
+            color:$sec;
+            background-color: $prim;
+            border-radius: 15px;
+            text-align: left;
+            display:block;
+            margin-inline-end: 0;
+            width:40%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        button:hover{
+            color:$prim;
+            background-color: black;
+    }
+
+}
+    @media only screen and (max-width: 651px) {
+            button{
+                width:70%;
+            }
+            li{
+                padding-top:3%;
+            }
     }
 </style>

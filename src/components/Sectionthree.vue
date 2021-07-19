@@ -66,7 +66,7 @@
         }
                    
         }
-    @media only screen and (max-width: 455px) {
+    @media only screen and (max-width: 651px) {
         h1{
             font-size: medium;
         }

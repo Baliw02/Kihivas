@@ -95,7 +95,7 @@
                 flex:80%;
             }
         }
-        @media only screen and (max-width: 455px) {
+        @media only screen and (max-width: 651px) {
             h1{
                 font-size: medium;
             }
@@ -108,7 +108,7 @@
                 background-size: 100%;
                 background-position: center;
                 margin-bottom: 100px;
-                margin-top: 100%;
+                margin-top: 120%;
             }
             .left-flex{
                 position: relative;

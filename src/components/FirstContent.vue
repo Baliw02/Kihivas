@@ -40,15 +40,20 @@ h1{
     font-size: 50px;
     font-family: $font-f;
     }
-@media only screen and (max-width: 455px) {
+@media only screen and (max-width: 454px) {
     .First-Content{
-        height: 450px;
+        height: 600px;
     }
     h1{
-        padding-top: 50%;
+        padding-top: 80%;
         font-size: $h1-s;
         }
     }
+@media only screen and (width: 651px) {
+    h1{
+        padding-top: 70%;
+    }
+}
 @media only screen and (min-width: 3839px) {
     h1{
         padding-top: 10%;

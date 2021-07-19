@@ -198,6 +198,11 @@
                 padding-right: 5px;
             }
         }
+        @media only screen and (max-width: 360px) {
+            p{
+                line-height: 1.5;
+            }
+        }
 
 
 </style>

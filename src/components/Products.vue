@@ -172,7 +172,7 @@
                 width: 5%;
             }
         }
-        @media only screen and (max-width: 462px) {
+        @media only screen and (max-width: 651px) {
             #price{
                 left:25%;
             }

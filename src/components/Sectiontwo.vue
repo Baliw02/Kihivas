@@ -83,7 +83,7 @@
             font-size: small;
         }
     }
-        @media only screen and (max-width: 455px) {
+        @media only screen and (max-width: 651px) {
             .full-flex{
                 margin-top: -10%;
             }
