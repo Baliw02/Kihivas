@@ -74,6 +74,7 @@
         align-items: center;
         justify-content: center;
         white-space: wrap;
+        padding-bottom:10%;
     }
     .left-flex{
         text-align: left;
@@ -152,21 +153,11 @@
         font-weight: 700;
         padding:5px 5px;
     }
-    @media only screen and (max-width: 1810px) {
-        .left-flex{
-            margin-inline-end: 0;
-            margin-bottom: 20%;
-        }
-        #wine{
-            width:15%;
-        }
-        .decs{
-            top:0;
-        }
-    }
         @media only screen and (max-width: 1810px) {
             .left-flex{
-                width: 100%;            
+                width: 100%;
+                margin-inline-end: 0;
+                margin-bottom: 20%;            
                 }
             .right-flex{
                 width: 100%;
@@ -176,11 +167,12 @@
                 width:12%;
             }
             .decs{
-                left:10%;
-                width: 10%;
+                top: 0;
+                left:3%;
+                width: 5%;
             }
         }
-        @media only screen and (max-width: 455px) {
+        @media only screen and (max-width: 462px) {
             #price{
                 left:25%;
             }

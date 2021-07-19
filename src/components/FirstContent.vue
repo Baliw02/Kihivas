@@ -45,13 +45,13 @@ h1{
         height: 450px;
     }
     h1{
-        margin-top: 50%;
+        padding-top: 50%;
         font-size: $h1-s;
         }
     }
 @media only screen and (min-width: 3839px) {
     h1{
-        margin-top: 10%;
+        padding-top: 10%;
     }
 }
 

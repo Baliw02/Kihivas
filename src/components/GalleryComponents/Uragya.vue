@@ -152,7 +152,7 @@
         text-transform: uppercase;
         padding:0;
     }
-    @media only screen and (max-width: 812px) {
+    @media only screen and (max-width: 1215px) {
         .visible{
         width:100%;
         }
@@ -177,9 +177,16 @@
                 padding-right: 5px;
         }
         }
-        @media only screen and (max-width: 1280px) {
+        @media only screen and (max-width: 1300px) {
                         p{
                 font-size: small;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+        @media only screen and (max-width: 1647px) {
+                        p{
+                font-size: medium;
                 padding-left: 5px;
                 padding-right: 5px;
             }

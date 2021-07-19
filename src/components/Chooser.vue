@@ -2,13 +2,13 @@
     <div>
         <div class="listing">
             <ul>
-                <li><button v-on:click="component='Betsek'">BETSEK</button></li>
-                <li><button v-on:click="component='Holdvolgy'">HOLDVÖLGY</button></li>
-                <li><button v-on:click="component='Kiraly'">KIRÁLY</button></li>
-                <li><button v-on:click="component='Bomboly'">BOMBOLY</button></li>
-                <li><button v-on:click="component='Szent'">SZENT-TAMÁS</button></li>
-                <li><button v-on:click="component='Veres'">VERES</button></li>
-                <li><button v-on:click="component='Uragya'">ÚRÁGYA</button></li>           
+                <li><button  v-on:click="component='Betsek'">BETSEK</button></li>
+                <li><button  v-on:click="component='Holdvolgy'">HOLDVÖLGY</button></li>
+                <li><button  v-on:click="component='Kiraly'">KIRÁLY</button></li>
+                <li><button  v-on:click="component='Bomboly'">BOMBOLY</button></li>
+                <li><button  v-on:click="component='Szent'">SZENT-TAMÁS</button></li>
+                <li><button  v-on:click="component='Veres'">VERES</button></li>
+                <li><button  v-on:click="component='Uragya'">ÚRÁGYA</button></li>           
             </ul>
         </div>
     <component v-bind:is="component"></component> 
@@ -44,7 +44,8 @@ export default{
                 component:'Betsek'
             }
         }
-    }
+        
+}
 </script>
 <style lang="scss" scoped>
      .listing{

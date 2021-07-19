@@ -84,6 +84,9 @@
         }
     }
         @media only screen and (max-width: 455px) {
+            .full-flex{
+                margin-top: -10%;
+            }
             .right-flex{
                 flex:100%;
                 justify-content: center;
