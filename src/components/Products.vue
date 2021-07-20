@@ -1,6 +1,6 @@
 <template>
 <div class="row">
-    <div class="left-flex">
+    <div class="left-block">
         <img id="wine" src="./Wines/jv_betsek-1-102x300.png">
         <img class="decs" src="./Wines/silver-decanter-2020.png" width="12%">
         <div class="title">
@@ -18,7 +18,7 @@
         </div>
 
     </div>
-    <div class="right-flex">
+    <div class="right-block">
         <img id="wine" src="./Wines/estate-furmint-2017-dry-1-1-102x300.png">
         <div class="title">
         <h1><strong>Furmint 2016</strong></h1>
@@ -58,9 +58,9 @@
     $prim: white;
 
     h1{
-        font-weight: 1000;
-        font-family: Fortlight;
-        color:black;
+        font-weight: 700;
+        font-family: Roboto;
+        color: $sec;
         font-size: xx-large;
     }
     .title{
@@ -76,7 +76,8 @@
         white-space: wrap;
         padding-bottom:10%;
     }
-    .left-flex{
+    .left-block{
+        border:2px solid $sec;
         text-align: left;
         width:500px;
         height:450px;
@@ -88,8 +89,13 @@
         display: inline-block;
         margin-inline-end: 30%;
         position: relative;
+        transition: all .2s linear;
     }
-    .right-flex{
+    .left-block:hover{
+        transform: scale(1.03);
+    }
+    .right-block{
+        border:2px solid $sec;
         text-align: left;
         padding-top: 60px;
         padding-bottom: 60px;
@@ -100,7 +106,12 @@
         background-color: rgba(240,240,240,100%);
         display: inline-block;
         position: relative;
+        transition: all .2s linear;
     }
+    .right-block:hover{
+        transform: scale(1.03);
+    }
+
     p{
         text-transform: uppercase;
         line-height: 2;
@@ -153,13 +164,13 @@
         font-weight: 700;
         padding:5px 5px;
     }
-        @media only screen and (max-width: 1810px) {
-            .left-flex{
+        @media only screen and (max-width: 1200px) {
+            .left-block{
                 width: 100%;
                 margin-inline-end: 0;
                 margin-bottom: 20%;            
                 }
-            .right-flex{
+            .right-block{
                 width: 100%;
             }
             #wine{
@@ -172,7 +183,26 @@
                 width: 5%;
             }
         }
-        @media only screen and (max-width: 651px) {
+        @media only screen and (max-width: 1600px) {
+            .left-block{
+                width:40%;
+                margin-inline-end: 5%;
+            }
+            .right-block{  
+                width:40%;
+
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .left-block{
+                margin-inline-end: 0;
+                width:80%;
+            }
+            .right-block{
+                margin-inline-end: 0;
+                width:80%;
+            }
             #price{
                 left:25%;
             }
@@ -181,7 +211,7 @@
                 left:45%;
             }
             .decs{
-                width:15%;
+                width:13%;
             }
         }
 </style>
