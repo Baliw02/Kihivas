@@ -57,161 +57,159 @@
     $sec: rgba(72, 61, 139, 100%);
     $prim: white;
 
-    h1{
-        font-weight: 700;
-        font-family: Roboto;
-        color: $sec;
-        font-size: xx-large;
-    }
-    .title{
-        border-bottom: 1px solid black;
+h1{
+    font-weight: 700;
+    font-family: Roboto;
+    color: $sec;
+    font-size: xx-large;
+}
+.title{
+    border-bottom: 1px solid black;
 
-    }
-    .row{
-        margin-top: 10%;
-        margin-left:5%;
-        margin-right: 5%;
-        align-items: center;
-        justify-content: center;
-        white-space: wrap;
-        padding-bottom:10%;
-    }
+}
+.row{
+    margin-top: 10%;
+    margin-left:5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    white-space: wrap;
+    padding-bottom:10%;
+}
+.left-block{
+    border:2px solid $sec;
+    text-align: left;
+    width:500px;
+    height:450px;
+    background-color: rgba(240,240,240,100%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 10%;
+    padding-right: 5%;
+    display: inline-block;
+    margin-inline-end: 30%;
+    position: relative;
+    transition: all .2s linear;
+}
+.left-block:hover{
+    transform: scale(1.03);
+}
+.right-block{
+    border:2px solid $sec;
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height:450px;
+    padding-left: 10%;
+    padding-right: 5%;
+    width:500px;
+    background-color: rgba(240,240,240,100%);
+    display: inline-block;
+    position: relative;
+    transition: all .2s linear;
+}
+.right-block:hover{
+    transform: scale(1.03);
+}
+
+p{
+    text-transform: uppercase;
+    line-height: 2;
+    font-size: small;
+    font-weight: 200;
+}
+button{
+    color: $sec;
+    background-color: transparent;
+    border:none;
+}
+img{
+    position:absolute;
+    left:-10%;
+    top:-5%;
+}
+.decs{
+    left:13%;
+    top:10%;
+}
+.price{
+    height: 10%;
+    left:0;
+    width: 100%;
+    position:absolute;
+    bottom:0;
+}
+#price{
+    position:absolute;
+    color:black;
+    font-size: medium;
+    font-family: Fortlight;
+    width:fit-content;
+    left:35%;
+    font-weight: 500;
+}
+#num{
+    width:10%;
+    position: absolute;
+    left:50%;
+}
+#shop{
+    position:absolute;
+    left:65%;
+    background-color: rgba(72, 61, 139, 100%);
+    border-radius: 15px;
+    color:white;
+    font-size: small;
+    font-weight: 700;
+    padding:5px 5px;
+}
+@media only screen and (max-width: 1200px) {
     .left-block{
-        border:2px solid $sec;
-        text-align: left;
-        width:500px;
-        height:450px;
-        background-color: rgba(240,240,240,100%);
-        padding-top: 60px;
-        padding-bottom: 60px;
-        padding-left: 10%;
-        padding-right: 5%;
-        display: inline-block;
-        margin-inline-end: 30%;
-        position: relative;
-        transition: all .2s linear;
-    }
-    .left-block:hover{
-        transform: scale(1.03);
+        width: 100%;
+        margin-inline-end: 0;
+        margin-bottom: 20%;            
     }
     .right-block{
-        border:2px solid $sec;
-        text-align: left;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        height:450px;
-        padding-left: 10%;
-        padding-right: 5%;
-        width:500px;
-        background-color: rgba(240,240,240,100%);
-        display: inline-block;
-        position: relative;
-        transition: all .2s linear;
+        width: 100%;
     }
-    .right-block:hover{
-        transform: scale(1.03);
-    }
-
-    p{
-        text-transform: uppercase;
-        line-height: 2;
-        font-size: small;
-        font-weight: 200;
-    }
-    button{
-        color: $sec;
-        background-color: transparent;
-        border:none;
-    }
-    img{
-        position:absolute;
-        left:-10%;
-        top:-5%;
+    #wine{
+        left:-8%;
+        width:12%;
     }
     .decs{
-        left:13%;
-        top:10%;
+        top: 0;
+        left:3%;
+            width: 5%;
     }
-    .price{
-        height: 10%;
-        left:0;
-        width: 100%;
-        position:absolute;
-        bottom:0;
+}
+@media only screen and (max-width: 1600px) {
+    .left-block{
+        width:40%;
+        margin-inline-end: 5%;
+    }
+    .right-block{  
+        width:40%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .left-block{
+        margin-inline-end: 0;
+        width:80%;
+    }
+    .right-block{
+        margin-inline-end: 0;
+        width:80%;
     }
     #price{
-        
-        position:absolute;
-        color:black;
-        font-size: medium;
-        font-family: Fortlight;
-        width:fit-content;
-        left:35%;
-        font-weight: 500;
+        left:25%;
     }
     #num{
-        width:10%;
-        position: absolute;
-        left:50%;
+        width:45px;
+        left:45%;
     }
-    #shop{
-        position:absolute;
-        left:65%;
-        background-color: rgba(72, 61, 139, 100%);
-        border-radius: 15px;
-        color:white;
-        font-size: small;
-        font-weight: 700;
-        padding:5px 5px;
+    .decs{
+        width:13%;
     }
-        @media only screen and (max-width: 1200px) {
-            .left-block{
-                width: 100%;
-                margin-inline-end: 0;
-                margin-bottom: 20%;            
-                }
-            .right-block{
-                width: 100%;
-            }
-            #wine{
-                left:-8%;
-                width:12%;
-            }
-            .decs{
-                top: 0;
-                left:3%;
-                width: 5%;
-            }
-        }
-        @media only screen and (max-width: 1600px) {
-            .left-block{
-                width:40%;
-                margin-inline-end: 5%;
-            }
-            .right-block{  
-                width:40%;
-
-            }
-        }
-
-        @media only screen and (max-width: 800px) {
-            .left-block{
-                margin-inline-end: 0;
-                width:80%;
-            }
-            .right-block{
-                margin-inline-end: 0;
-                width:80%;
-            }
-            #price{
-                left:25%;
-            }
-            #num{
-                width:45px;
-                left:45%;
-            }
-            .decs{
-                width:13%;
-            }
-        }
+}
 </style>

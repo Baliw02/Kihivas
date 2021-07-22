@@ -1,6 +1,5 @@
 <template>
 <div class="menu-items">  
-    
     <ul>
         <li><img src="./logo.png" alt=""></li>
         <li ><a herf="#">NYITÓLAP</a></li>
@@ -13,8 +12,7 @@
         <li ><button id="cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button></li>
         <li ><button id="eng" v-on:click='switchingLang()' class="langs">ENG</button></li>
         <li ><button id="hun" v-on:click='switchingLang()' class="langs act">HUN</button></li>
-    </ul>
-    
+    </ul>    
 </div>
 </template>
 
@@ -32,9 +30,9 @@
                 if(btn_eng.className != "langs act"){
                     btn_hun.classList.toggle("act");
                 }
-            }
         }
     }
+}
 </script>
 <style lang="scss" scoped>
 
@@ -102,11 +100,5 @@ li:hover{
     color:$sec;
 }
 
-
-</style>
-
-<style lang="scss">
-$sec: rgba(72, 61, 139, 100%);
-$prim: white;
 
 </style>

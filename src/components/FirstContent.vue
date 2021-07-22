@@ -30,7 +30,7 @@ $h1-s: xx-large;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
+}
 h1{
     animation-name: fly;
     animation-duration: 2s;

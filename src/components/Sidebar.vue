@@ -45,65 +45,65 @@
 </script>
 
 <style lang="scss" scoped>
-    $sec: rgba(72, 61, 139, 100%);
-    $prim: white;
+$sec: rgba(72, 61, 139, 100%);
+$prim: white;
 
-    .others{
-        text-align: right;
-    }
-    img{
-        margin-top: -0.5%;
-        padding: 0;
-        float:left;
-        width:12%;
-    }
-    button{
-        border:none;
-    }
-    #cart{
-        background-color: rgba(72, 61, 139, 100%);
-        border-radius: 10%;
-        width:60px;
-        color:white;
-    }
-    #toggler{
-        background-color: black;
-        width:fit-content;
-        z-index: 10;
-        float:right;
-        margin-bottom: 0;
-        margin-top: -5px;
+.others{
+    text-align: right;
+}
+img{
+    margin-top: -0.5%;
+    padding: 0;
+    float:left;
+    width:12%;
+}
+button{
+    border:none;
+}
+#cart{
+    background-color: rgba(72, 61, 139, 100%);
+    border-radius: 10%;
+    width:60px;
+    color:white;
+}
+#toggler{
+    background-color: black;
+    width:fit-content;
+    z-index: 10;
+    float:right;
+    margin-bottom: 0;
+    margin-top: -5px;
 
-    }
-    .langs{
-        font-size: small;
-        background-color: black;
-        color:white;
-        margin-inline: 1%;
-    }
-    .act{
-    border-top:1px solid $sec;
-    transition: all .2s linear;
-    }
-    ul{
-        padding-left: 0;
-        margin-left: 0;
-        list-style: none;
-        text-align: left;
-    }
-    li{
-        line-height: 3;
-        font-family: Roboto;
-        font-weight: 500;
-        color:white;
-        font-size: medium;
-    }
-    h1{
-        font-size: xx-large;
-        font-weight: 500;
-        text-align: left;
-        padding-left:0;
-        border-bottom: 1px solid white;
-    }
+}
+.langs{
+    font-size: small;
+    background-color: black;
+    color:white;
+    margin-inline: 1%;
+}
+.act{
+border-top:1px solid $sec;
+transition: all .2s linear;
+}
+ul{
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+    text-align: left;
+}
+li{
+    line-height: 3;
+    font-family: Roboto;
+    font-weight: 500;
+    color:white;
+    font-size: medium;
+}
+h1{
+    font-size: xx-large;
+    font-weight: 500;
+    text-align: left;
+    padding-left:0;
+    border-bottom: 1px solid white;
+}
 </style>
 
